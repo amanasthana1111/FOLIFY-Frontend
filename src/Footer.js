@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FAF4F3] text-gray-400 px-6 py-12">
+    <footer className="bg-[#FAF4F3] text-gray-400 px-6 py-12 border border-black-900">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -18,13 +18,11 @@ const Footer = () => {
             <span className="text-black text-lg font-semibold">Folify</span>
           </div>
           <p className="text-black">
-            Build smarter, deploy sharper. Folify transforms your resume into a
-            stunning portfolio, scans it with ATS, and gives smart suggestions —
-            all in seconds
+            Built the backend & ATS checker — now it scans resumes, extracts
+            keywords & gives smart suggestions instantly.
           </p>
         </div>
 
-        {/* Company Links */}
         <div className="w-[100px]">
           <h4 className="text-black font-semibold mb-4">Folify</h4>
           <ul className=" text-black space-y-2">
@@ -42,7 +40,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
+        
         <div className="w-[200px]">
           <h4 className="text-black font-semibold mb-4">Features</h4>
           <ul className=" text-black space-y-2">
@@ -54,11 +52,13 @@ const Footer = () => {
               {" "}
               <Link to={"/generate"}>Generate Portfolio website</Link>
             </li>
+            <li className="hover:text-red-600 transition-colors">
+              
+              <Link to={"/how-it-works"}>How It Works</Link>
+            </li>
           </ul>
         </div>
-        
 
-        {/* Social Icons */}
         <div>
           <h4 className="text-black font-semibold mb-4">Connect</h4>
           <div className=" text-black flex gap-4 text-xl">

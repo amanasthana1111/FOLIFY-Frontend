@@ -14,7 +14,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Middle: Navigation Links */}
       <ul className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
         
         <li>

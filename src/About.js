@@ -59,7 +59,7 @@ const About = () => {
             <p className="text-gray-600">Portfolios Generated</p>
           </div>
           <div>
-            <h4 className="text-3xl font-bold text-red-500">50 sec</h4>
+            <h4 className="text-3xl font-bold text-red-500">30 sec</h4>
             <p className="text-gray-600">Avg. Build Time</p>
           </div>
           <div>

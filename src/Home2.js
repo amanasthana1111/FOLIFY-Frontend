@@ -1,5 +1,7 @@
 import React from "react";
 import Profile from "./Profile";
+import { Link } from 'react-router'
+import img1 from "./assets/atsimg.png"
 
 const Home2 = () => {
   return (
@@ -27,9 +29,9 @@ const Home2 = () => {
               ✓ Trained on vast data to understand career and skill patterns
             </li>
           </ul>
-          <button className="bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600 transition">
+          <Link to ={"/generate"} className="bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600 transition">
             Try Our AI-Powered Portfolio Builder
-          </button>
+          </Link>
         </div>
 
         {/* Right Section (Image) */}
@@ -71,9 +73,9 @@ const Home2 = () => {
               <li>✓ Instantly turns your resume into a stunning portfolio</li>
               <li>✓ No code needed – just upload your resume</li>
             </ul>
-            <button className="bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600 transition">
+            <Link to ={"/generate"}  className="bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600 transition">
               Try Our AI-Powered Portfolio Builder
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -116,7 +118,7 @@ const Home2 = () => {
         {/* Right Section (Image) */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2025/02/google-gemini-memory-anim.gif?q=70&fit=crop&w=825&dpr=1"
+            src={img1}
             alt="OpenAI Logo"
             className="max-w-full h-auto"
           />

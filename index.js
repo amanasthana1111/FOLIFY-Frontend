@@ -11,6 +11,8 @@ import Song from "./Song";
 import Ats from "./src/Ats";
 import HowItWork from "./src/HowItWork";
 import { PdfProvider } from "./src/Pdfcontext";
+import Profile from "./src/Profile"
+import NoPageFound from "./src/NoPageFound";
 
 const App = () => {
   return (
@@ -22,7 +24,9 @@ const App = () => {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/ats-resume-checker" element={<Ats></Ats>}></Route>
         <Route path="/how-it-works" element={<HowItWork></HowItWork>}></Route>
-        {/* <Route path="/contact" element={<Contact></Contact>}></Route> */}
+        <Route path="/contact" element={<Profile></Profile>}></Route>
+        <Route path="*" element={<NoPageFound></NoPageFound>}></Route>
+        {/* <Route path="/Profile" element={<Profile></Profile>}></Route> */}
       </Routes>
       <Footer></Footer>
       <Song></Song>
