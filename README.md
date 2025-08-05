@@ -1,7 +1,7 @@
 # 🌟 FOLIFY — AI Portfolio Generator & ATS Resume Checker
 
 > Transform your resume into a **stunning portfolio website** and get your **ATS score** instantly — powered by **Google’s Gemini AI**.
-
+Link: https://folify.netlify.app/
 ![FOLIFY Banner](https://i.ibb.co/gpJXs27/yash2.jpg)
 
 ---
@@ -55,3 +55,4 @@ node ./index.js
 
 git clone https://github.com/amanasthana1111/FOLIFY-Frontend.git
 git clone https://github.com/amanasthana1111/FOLIFY-Backend.git
+
