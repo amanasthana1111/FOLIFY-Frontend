@@ -13,6 +13,8 @@ import HowItWork from "./src/HowItWork";
 import { PdfProvider } from "./src/Pdfcontext";
 import Profile from "./src/Profile"
 import NoPageFound from "./src/NoPageFound";
+import Generate from "./src/Generate";
+import Template from "./src/Template";
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
         <Route path="/ats-resume-checker" element={<Ats></Ats>}></Route>
         <Route path="/how-it-works" element={<HowItWork></HowItWork>}></Route>
         <Route path="/contact" element={<Profile></Profile>}></Route>
+        <Route path="/generate" element={<Generate></Generate>}></Route>
+        <Route path="/template" element={<Template></Template>}></Route>
         <Route path="*" element={<NoPageFound></NoPageFound>}></Route>
         {/* <Route path="/Profile" element={<Profile></Profile>}></Route> */}
       </Routes>

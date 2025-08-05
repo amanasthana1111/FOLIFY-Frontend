@@ -110,9 +110,9 @@ const Home2 = () => {
               ✓ Highlights pros, cons, and career-tailored recommendations
             </li>
           </ul>
-          <button className="bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600 transition">
+          <Link to={"/ats-resume-checker"} className="bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600 transition">
             Try Our AI-Powered Ats Scanner
-          </button>
+          </Link>
         </div>
 
         {/* Right Section (Image) */}

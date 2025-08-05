@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { usePdf } from "./Pdfcontext";
 import Loader from "./Loader";
-import { files } from "jszip";
 import AtsData from "./AtsData";
 
 const Ats = () => {
@@ -18,7 +17,7 @@ const Ats = () => {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:5000/upload", {
+      const res = await fetch("https://folify-backend.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
