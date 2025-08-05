@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
-import { RecoilRoot } from "recoil";
 import Home from "./src/Home";
 import Navbar from "./src/Navbar";
 import Banner from "./src/Banner";
@@ -41,10 +40,8 @@ const App = () => {
 const root = ReactDom.createRoot(document.querySelector(".root"));
 root.render(
   <BrowserRouter>
-    <RecoilRoot>
       <PdfProvider>
         <App />
       </PdfProvider>
-    </RecoilRoot>
   </BrowserRouter>
 );
