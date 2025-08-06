@@ -8,6 +8,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "alias": {
+    "process": "process/browser"
+  },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@parcel/transformer-raw": "^2.15.4",
