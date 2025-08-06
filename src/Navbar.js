@@ -51,9 +51,9 @@ const Navbar = () => {
         <span className="text-green-600 text-sm font-medium hidden sm:block">
           Online...
         </span>
-        <Link to="/generate">
+        <Link to="/ats-resume-checker">
           <div className="bg-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-red-600 transition">
-            Create Portfolio
+              Analyze Resume
           </div>
         </Link>
       </div>
