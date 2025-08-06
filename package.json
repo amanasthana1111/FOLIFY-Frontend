@@ -8,16 +8,12 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "alias": {
-    "process": "process/browser"
-  },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@parcel/transformer-raw": "^2.15.4",
     "@tailwindcss/postcss": "^4.1.11",
     "dotenv": "^17.2.1",
     "file-saver": "^2.0.5",
-    "jszip": "^3.10.1",
     "react": "^19.1.1",
     "react-audio-player": "^0.17.0",
     "react-dom": "^19.1.1",
