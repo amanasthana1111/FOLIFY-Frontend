@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import Home from "./src/Home";
 import Navbar from "./src/Navbar";
 import Banner from "./src/Banner";
@@ -39,9 +39,9 @@ const App = () => {
 
 const root = ReactDom.createRoot(document.querySelector(".root"));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
       <PdfProvider>
         <App />
       </PdfProvider>
-  </BrowserRouter>
+  </HashRouter>
 );
