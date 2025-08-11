@@ -41,7 +41,7 @@ export default function WhirtError() {
           >
             <circle r={1} cx={1} cy={1} />
           </svg>
-          More than 500 users. If you see any empty white space, it's fine — download the code there.
+          More than 600+ users. If you see any empty white space, it's fine — download the code there.
         </p>
         
       </div>
