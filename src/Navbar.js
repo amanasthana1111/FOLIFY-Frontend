@@ -1,5 +1,16 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 const Navbar = () => {
+  const [views, setView] = useState(0);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      let res = await fetch("https://folify-backend.onrender.com/users");
+      const data = await res.json();
+      setView(data);
+    };
+    fetchData();
+  }, []);
   return (
     <nav className="bg-[#FAF4F3] w-full shadow-sm py-4 px-6 flex items-center justify-between">
       {/* Left: Logo */}
@@ -15,7 +26,6 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
-        
         <li>
           <Link to="/template" className="hover:text-red-600 transition">
             Templates
@@ -51,11 +61,10 @@ const Navbar = () => {
         <span className="text-green-600 text-sm font-medium hidden sm:block">
           Online...
         </span>
-        <Link to="/ats-resume-checker">
-          <div className="bg-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-red-600 transition">
-              Analyze Resume
-          </div>
-        </Link>
+
+        <div className="bg-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-red-600 transition">
+          Total User {views == 0 ? "" : views?.TotalView}
+        </div>
       </div>
     </nav>
   );
