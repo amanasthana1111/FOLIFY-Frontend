@@ -9,7 +9,7 @@ import { Link } from 'react-router';
 
 const Previewer = () => {
   const { Resume } = usePdf();
-  const data = Resume.html || "jj"
+  const data = Resume.html 
 
   if(data==undefined){return}
   const downloadZip = () => {
