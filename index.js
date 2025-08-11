@@ -14,6 +14,7 @@ import Profile from "./src/Profile"
 import NoPageFound from "./src/NoPageFound";
 import Generate from "./src/Generate";
 import Template from "./src/Template";
+import PrivewRout from "./src/PrivewRout";
 
 const App = () => {
   return (
@@ -29,7 +30,7 @@ const App = () => {
         <Route path="/generate" element={<Generate></Generate>}></Route>
         <Route path="/template" element={<Template></Template>}></Route>
         <Route path="*" element={<NoPageFound></NoPageFound>}></Route>
-        {/* <Route path="/Profile" element={<Profile></Profile>}></Route> */}
+        <Route path="/preview" element={<PrivewRout/>}></Route>
       </Routes>
       <Footer></Footer>
       <Song></Song>
