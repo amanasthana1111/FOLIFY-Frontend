@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { usePdf } from "./Pdfcontext";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
+import WhirtError from './WhirtError';
 
 const Previewer = () => {
   const { Resume } = usePdf();
@@ -49,6 +50,7 @@ const Previewer = () => {
 
   return (
     <>
+    <WhirtError/>
     <div className="flex justify-end p-4 bg-[#FAF4F3] border-b shadow-sm">
     <button
       onClick={downloadZip}
