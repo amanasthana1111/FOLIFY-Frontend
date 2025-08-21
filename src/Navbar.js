@@ -63,7 +63,9 @@ const Navbar = () => {
         </span>
 
         <div className="bg-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-red-600 transition">
-          Total User : {views == 0 ? "" : views?.TotalView}
+          <Link to="/ats-resume-checker" className="hover:text-red-600 transition">
+            Scan Resume
+          </Link>
         </div>
       </div>
     </nav>
