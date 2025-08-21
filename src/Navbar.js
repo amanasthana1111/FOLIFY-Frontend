@@ -55,7 +55,7 @@ const Navbar = () => {
         </span>
 
         <div className="bg-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md  transition">
-          <Link to="/ats-resume-checker" className="hover:text-red-600 transition">
+          <Link to="/ats-resume-checker" className="transition">
             Scan Resume
           </Link>
         </div>
